@@ -2,3 +2,9 @@
     color: blue;
     font-family: "Trykker", serif;
 }
+
+.texto-tarjeta {
+    min-height: 130px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
