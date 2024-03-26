@@ -1,12 +1,10 @@
-:root{
-    --dark: #16191c;
-    --dark-x: #1e2126;
-    --light: #ffffff;
-
+.titulo {
+    color: blue;
+    font-family: "Trykker", serif;
 }
 
-body{
-
-
+.texto-tarjeta {
+    min-height: 130px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-.bg-dark {background-color: var(--dark) !important;}
