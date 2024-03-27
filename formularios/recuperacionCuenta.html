@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recuperación de Contraseña</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Compradores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesFormularioRegistro.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Trykker&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -19,18 +21,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./recuperacionCuenta.html">Registro</a>
+            <a class="nav-link active" aria-current="page" href="./formularioRegistro.html">Registro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Iniciar Sesión</a>
+            <a class="nav-link active" aria-current="page" href="../iniciosesion.html">Iniciar Sesión</a>
           </li>
         </ul>
       </div>
     </div>
 </nav>
-<div class="container">
+<div class="container-formulario">
   <div class="row">
-    <div class="col-md-6 offset-md-3">
+    <div class="col">
       <div class="form-container">
         <h2 class="text-center">Recuperación de Contraseña</h2>
         <form id="passwordRecoveryForm">
@@ -46,7 +48,7 @@
 </div>
 <script src="code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="./scriptRecuperacionCuenta.js"></script>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-3 py-3 my-4 border-top">
   <p class="col-md-2 mb-0 text-muted">© 2024 Edu Ayuda Plus</p>
 
   <a href="/"
