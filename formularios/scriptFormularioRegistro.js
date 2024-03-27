@@ -1,6 +1,7 @@
-$(document).ready(function () {
-    $('#registroForm').submit(function (event) {
-        console.log(event.data)
+document.addEventListener('DOMContentLoaded', function () {
+    var registroForm = document.getElementById('registroForm');
+    registroForm.addEventListener('submit', function (event) {
+        console.log(event.data);
         event.preventDefault();
         if (validarFormulario()) {
             alert('Formulario enviado correctamente');
@@ -9,26 +10,26 @@ $(document).ready(function () {
 });
 
 function validarFormulario() {
-    var nombre = $('#nombre').val().trim();
+    var nombre = document.getElementById('nombre').value.trim();
     if (nombre === '') {
         alert('Por favor, ingrese su nombre completo.');
         return false;
     }
 
-    var usuario = $('#usuario').val().trim();
+    var usuario = document.getElementById('usuario').value.trim();
     if (usuario === '') {
         alert('Por favor, ingrese un nombre de usuario.');
         return false;
     }
 
-    var email = $('#email').val().trim();
+    var email = document.getElementById('email').value.trim();
     if (!isValidEmail(email)) {
         alert('Por favor, ingrese un correo electrónico válido.');
         return false;
     }
 
-    var password = $('#password').val();
-    var confirmPassword = $('#confirmPassword').val();
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
     if (password === '' || confirmPassword === '') {
         alert('Por favor, complete ambos campos de contraseña.');
         return false;
@@ -42,8 +43,8 @@ function validarFormulario() {
         return false;
     }
 
-    var fechaNacimiento = $('#fechaNacimiento').val();
-    if(!fechaNacimiento){
+    var fechaNacimiento = document.getElementById('fechaNacimiento').value;
+    if (!fechaNacimiento) {
         alert('Debe ingresar su fecha de nacimiento.');
         return false;
     }
